@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Car Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-container">
+        <!-- Logo or Brand Name -->
+        <div>
+          <h1>
+            <a href="#mehul sain"><img src="images/logo.png" alt="Lightning Garadge" height="auto" width="200px"></a>
+          </h1>
+        </div>
+
+        <!-- Navigation Menu -->
+        <nav class="header-tags">
+          <ul class="nav-list">
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link">About</a></li>
+            <li><a href="#" class="nav-link">Services</a></li>
+            <li><a href="#" class="nav-link">Portfolio</a></li>
+            <li><a href="#" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <!-- Hero Section -->
+         <div class="image-text">
+        
+         </div>
+         <div class="moving-img">
+          <H2 class="heading-text">Drive Your Dream <br>Car With Us.</H2>
+         </div>
+        <section class="hero">
+          <h2>"Exclusive Models"</h2>
+          <p>
+            Indulge in the ultimate driving experience with our latest car models, where luxury meets performance and innovation. Every detail is crafted to deliver unparalleled comfort, cutting-edge technology, and sleek, modern design. From powerful engines to advanced safety features, our vehicles redefine excellence on the road. Whether you're cruising through the city or embarking on long adventures, these cars provide an unmatched blend of sophistication and reliability. Elevate your journey with the perfect combination of style and substance, tailored for those who demand the very best. Discover the future of driving with a lineup that's as dynamic as it is luxurious.
+          </p>
+          <!-- <a href="#models" class="explore-button">Explore Models</a> -->
+        </section>
+
+        <!-- Featured Cars Section -->
+        <section id="models" class="featured-cars">
+          <div class="car-card">
+            <img src="images/te.jpg" alt="Car Model 1" class="car-image" />
+            <h3>BMW M4 CS</h3>
+            <p>Starting at $45,000</p>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+          <div class="car-card">
+            <img src="images/to.jpg" alt="Car Model 2" class="car-image" />
+            <h3>BMW M5 CS</h3>
+            <p>Starting at $50,000</p>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+          <div class="car-card">
+            <img src="images/8.jpg" alt="Car Model 3" class="car-image" />
+            <h3>Model Z</h3>
+            <p>Starting at $60,000</p>
+            <a href="#" class="learn-more">Learn More</a>
+          </div>
+        </section>
+
+    
+        <!-- Testimonials Section -->
+        <section class="testimonials">
+          <h2>"What Our Customers Love About Us"</h2>
+          <div class="testimonial-list">
+            <blockquote class="testimonial">
+              <img src="images/Fucking shit.jpeg" alt="image" height="200px" width="250px">
+              <p>
+                "Thank you for delivering my Mercedes in perfect condition! I truly appreciate your attention to detail and seamless process throughout. You’ve made the experience smooth and stress-free. Highly grateful for your exceptional service!"
+              </p>
+              <cite>- Alex M.</cite>
+            </blockquote>
+            <blockquote class="testimonial-1">
+              <img src="images/crazy shit.jpeg" alt="image" height="200px" width="250px">
+              <p>
+                Thank you so much for delivering my car in such great condition! I’m really impressed by your professionalism and care throughout the process. You made everything easy and efficient. I truly appreciate your excellent service!"
+                its time!"
+              </p>
+              <cite>- Jamie L.</cite>
+            </blockquote>
+          </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+          <!-- Social Media Links -->
+          <div class="social-links">
+            <a href="#" class="social-link">Facebook</a>
+            <a href="#" class="social-link">Twitter</a>
+            <a href="#" class="social-link">Instagram</a>
+          </div>
+        <!-- Copyright Section -->|
+        <div class="copyright">
+          <p>&copy; 2025 Your Website. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      // JavaScript to swap images on loop end
+document.addEventListener('DOMContentLoaded', function() {
+  const movingImg = document.querySelector('.moving-img');
+  const images = [
+    "images/pexels-julian-largo-622163228-18003063.jpg", 
+    "images/pexels-julian-largo-622163228-17377920.jpg",
+    // "images/pexels-pixabay-358189.jpg",
+    "images/1.jpg",
+    "images/2.jpg",
+    "images/3.jpg",
+    "images/4.jpg"
+  ];
+
+  let currentImageIndex = 0;
+  const totalImages = images.length;
+
+  movingImg.addEventListener('animationiteration', function() {
+    // Swap the background image after zoom loop ends
+    currentImageIndex = (currentImageIndex + 1) % totalImages;
+    movingImg.style.backgroundImage = `url("${images[currentImageIndex]}")`;
+  });
+});
+
+    </script>
+  </body>
+</html>
